@@ -8,5 +8,33 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   font-weight: 500;
-  color: #fff;
+  color: rgb(75, 75, 75);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  min-height: 150px;
+  align-items: center;
+  gap: 25px;
+  background-color: lightblue;
+  font-size: 25px;
+}
+
+nav ul li:first-child {
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+nav ul li:nth-child(2) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+nav ul li:last-child {
+  margin-right: 100px;
 }
