@@ -38,3 +38,73 @@ nav ul li a:hover {
 nav ul li:last-child {
   margin-right: 100px;
 }
+
+header {
+  background-color: #66c089;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 600px;
+}
+
+header section.intro {
+  text-align: center;
+  margin: 25px auto 25px 20px;
+  background-color: #f4ecd4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  border-radius: 50px;
+}
+
+header section.intro h1 {
+  font-size: 40px;
+  padding: 0px 10px;
+}
+
+header section.intro p {
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+header section.calendar {
+  margin: 25px 20px 25px 20px;
+  background-color: #f4ecd4;
+  max-width: 600px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  column-gap: 100px;
+}
+
+header section.calendar h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+}
+
+header section.calendar h3 {
+  font-size: 26px;
+}
+
+header section.calendar article {
+  margin-left: 25px;
+  padding: 25px;
+  width: 90%;
+  border-radius: 25px;
+}
+
+header section.calendar article:nth-child(2) {
+  background-color: #f8e271;
+}
+
+header section.calendar article:nth-child(3) {
+  background-color: #e15959;
+}
+
+header section.calendar article:last-child {
+  background-color: #e6905b;
+}
