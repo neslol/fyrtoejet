@@ -1,3 +1,5 @@
+/* ADJUSTMENTS */
+
 *,
 *::before,
 *::after {
@@ -10,6 +12,8 @@
   font-weight: 500;
   color: rgb(75, 75, 75);
 }
+
+/* NAV & FOOTER */
 
 nav ul {
   display: flex;
@@ -26,37 +30,59 @@ nav ul li:first-child {
   margin-right: auto;
 }
 
-body.index nav ul li:nth-child(2) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-body.omos nav ul li:nth-child(3) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-body.galleri nav ul li:nth-child(4) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-body.personale nav ul li:nth-child(5) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-body.aabningstider nav ul li:last-child a {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
-
 nav ul li a:hover {
   color: black;
 }
 
 nav ul li:last-child {
   margin-right: 100px;
+}
+
+footer {
+  background-color: #e891ad;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer section.contact {
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer section.contact h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+footer section.form {
+  max-width: 650px;
+  margin-right: 100px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+footer section.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #c897e8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* INDEX */
+
+body.index nav ul li:nth-child(2) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 header {
@@ -129,44 +155,34 @@ header section.calendar article:last-child {
   background-color: #e6905b;
 }
 
-footer {
-  background-color: #e891ad;
-  min-height: 400px;
-  display: flex;
-  flex-wrap: wrap;
+/* Galleri */
+
+body.galleri {
+  background-color: #66c089;
 }
 
-footer section.contact {
-  margin-left: 100px;
-  margin-right: auto;
-  margin-top: 50px;
-  max-width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+body.galleri nav ul li:nth-child(4) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
-footer section.contact h2 {
-  font-size: 36px;
-  margin-bottom: 25px;
+body.galleri h2.title {
+  font-size: 48px;
+  text-align: center;
+  margin: 25px 0;
 }
 
-footer section.form {
-  max-width: 650px;
-  margin-right: 100px;
-  margin-top: 50px;
+body.galleri section.values {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-
-footer section.form form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #c897e8;
+  align-items: center;
   padding: 10px;
-  border-radius: 10px;
+  background-color: #f4ecd4;
+}
+
+body.galleri section.values h3 {
+  font-size: 25px;
 }
 
 .flex-item {
@@ -214,4 +230,21 @@ figcaption {
 
 .large {
   flex: 1 1 500px;
+}
+
+/* ? */
+
+body.omos nav ul li:nth-child(3) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body.personale nav ul li:nth-child(5) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body.aabningstider nav ul li:last-child a {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
