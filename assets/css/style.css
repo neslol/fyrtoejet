@@ -248,3 +248,16 @@ body.aabningstider nav ul li:last-child a {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+
+section.tekst-omos {
+  background-color: #66c089;
+  display: flex;
+  min-height: 400px;
+}
+.column {
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 10px;
+  columns: 3;
+  gap: 30px;
+}
