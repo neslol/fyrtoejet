@@ -4,8 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Om Os</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="omos">
+    <nav>
+      <ul>
+        <li>
+          <img
+            height="100"
+            width="150"
+            src="assets/img/logo.png"
+            alt="Fyrtøjet Børnehave"
+          />
+        </li>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="om-os.html">Om os</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="personale.html">Personale</a></li>
+        <li><a href="aabningstider.html">Åbningstider</a></li>
+      </ul>
+    </nav>
+
     <section class="tekst-omos">
       <article class="tekst">
         <p>
@@ -37,5 +56,78 @@
         </p>
       </article>
     </section>
+    <!-- insert the needed stuff here -->
+    <!-- AHHHHHHHHHHHHHHHHH -->
+    <footer>
+      <section class="contact">
+        <h2>Har du yderligere spørgsmål om børnehaven?</h2>
+        <h3>Så ring endelig til os på +45 70 24 12 07</h3>
+        <h3>
+          Vi har desværre ingen form for mail, på grund af GDPR-reglerne i
+          Danmark.
+        </h3>
+      </section>
+      <section class="form">
+        <h2>
+          Vil du have dit barn med i børnehaven? Så udfyld venligst formularen
+          herunder!
+        </h2>
+        <form action="" method="post">
+          <label for="firstName"
+            >Fornavn:
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Dit fornavn"
+            />
+          </label>
+          <label for="lastName"
+            >Efternavn:
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Dit efternavn"
+            />
+          </label>
+          <label for="homeAddress"
+            >Hjemmeadresse:
+            <input
+              type="text"
+              name="homeAddress"
+              id="homeAddress"
+              placeholder="Din hjemmeadresse"
+            />
+          </label>
+          <label for="childName"
+            >Barnets navn:
+            <input
+              type="text"
+              name="childName"
+              id="childName"
+              placeholder="Dit barns navn"
+            />
+          </label>
+          <label for="startTimeDate"
+            >Hvornår skal barnet starte? (bemærk åbningstiderne!)
+            <input
+              type="date"
+              id="startDate"
+              name="startDate"
+              value="2025-03-13"
+              min="2025-03-13"
+            />
+            <input
+              type="time"
+              id="startTime"
+              name="startTime"
+              min="06:30"
+              max="17:00"
+            />
+          </label>
+        </form>
+      </section>
+    </footer>
   </body>
 </html>
