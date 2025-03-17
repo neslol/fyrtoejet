@@ -39,7 +39,7 @@ nav ul li:last-child {
 }
 
 footer {
-  background-color: #e891ad;
+  background-color: #8c8c8c;
   min-height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +73,7 @@ footer section.form form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #c897e8;
+  background-color: #2b2d42;
   padding: 10px;
   border-radius: 10px;
 }
@@ -187,8 +187,23 @@ header section p {
   background-size: cover;
 }
 .events {
-  background-color: #8c8a93;
+  background-color: #dbc4c0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  h1 {
+    font-size: 50px;
+    color: black;
+  }
+  p {
+    padding: 5px;
+  }
 }
+
 /* 
 header {
   background-image: url("/assets/img/ha-fyrtoejet.png");
