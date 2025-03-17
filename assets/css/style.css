@@ -85,6 +85,108 @@ body.index nav ul li:nth-child(2) a {
   text-underline-offset: 5px;
 }
 
+body.index {
+  background-color: #ecdeb5;
+}
+
+header {
+  display: grid;
+  max-width: 1200px;
+  margin: 10px auto;
+  gap: 10px;
+  grid-template-columns: repeat(5, 240px);
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas:
+    "imgOne imgOne imgTwo imgThree imgThree"
+    "imgOne imgOne imgFour imgFive imgFive"
+    "imgSix imgSeven imgSeven imgFive imgFive"
+    "imgSix imgEight imgNine imgNine imgTen";
+}
+
+header section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+header section h4 {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 13px;
+  margin: 10px 10px 10px 10px;
+}
+
+header section p {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 11px;
+  margin: 0 10px 20px 10px;
+}
+
+#imgOne {
+  background-image: url("/assets/img/fastelavn2.png");
+  background-size: cover;
+  grid-area: imgOne;
+}
+
+#imgTwo {
+  grid-area: imgTwo;
+  background-image: url("/assets/img/fastelavn.png");
+  background-size: cover;
+}
+
+#imgThree {
+  grid-area: imgThree;
+  background-image: url("/assets/img/Easter2.png");
+  background-size: cover;
+}
+
+#imgFour {
+  grid-area: imgFour;
+  background-image: url("/assets/img/easter4.png");
+  background-size: contain;
+}
+
+#imgFive {
+  grid-area: imgFive;
+  background-image: url("/assets/img/fastelavn3.png");
+  background-size: cover;
+}
+
+#imgSix {
+  grid-area: imgSix;
+  background-image: url("/assets/img/Easter.png");
+  background-size: cover;
+}
+
+#imgSeven {
+  grid-area: imgSeven;
+  background-image: url("/assets/img/easter5.png");
+  background-size: cover;
+}
+
+#imgEight {
+  grid-area: imgEight;
+  background-image: url("/assets/img/easter3.png");
+  background-size: cover;
+}
+
+#imgNine {
+  grid-area: imgNine;
+  background-image: url("/assets/img/fastelavn4.png");
+  background-size: cover;
+}
+
+#imgTen {
+  grid-area: imgTen;
+  background-image: url("/assets/img/fastelavn5.png");
+  background-size: cover;
+}
+/* 
 header {
   background-image: url("/assets/img/ha-fyrtoejet.png");
   background-repeat: no-repeat;
@@ -157,7 +259,7 @@ header section.calendar article:nth-child(3) {
 header section.calendar article:last-child {
   background-color: #e6905b;
 }
-
+*/
 /* Galleri */
 
 body.galleri {
