@@ -128,14 +128,14 @@ header section p {
 }
 
 #imgOne {
-  background-image: url("/assets/img/fastelavn2.png");
+  background-image: url("assets/img/fastelavn2.png");
   background-size: cover;
   grid-area: imgOne;
 }
 
 #imgTwo {
   grid-area: imgTwo;
-  background-image: url("/assets/img/fastelavn.png");
+  background-image: url("assets/img/fastelavn.png");
   background-size: cover;
 }
 
@@ -147,45 +147,46 @@ header section p {
 
 #imgFour {
   grid-area: imgFour;
-  background-image: url("/assets/img/easter4.png");
-  background-size: contain;
+  background-image: url("assets/img/easter4.png");
+  background-size: cover;
 }
 
 #imgFive {
   grid-area: imgFive;
-  background-image: url("/assets/img/fastelavn3.png");
+  background-image: url("assets/img/fastelavn3.png");
   background-size: cover;
 }
 
 #imgSix {
   grid-area: imgSix;
-  background-image: url("/assets/img/Easter.png");
+  background-image: url("assets/img/Easter.png");
   background-size: cover;
 }
 
 #imgSeven {
   grid-area: imgSeven;
-  background-image: url("/assets/img/easter5.png");
+  background-image: url("assets/img/easter5.png");
   background-size: cover;
 }
 
 #imgEight {
   grid-area: imgEight;
-  background-image: url("/assets/img/easter3.png");
+  background-image: url("assets/img/easter3.png");
   background-size: cover;
 }
 
 #imgNine {
   grid-area: imgNine;
-  background-image: url("/assets/img/fastelavn4.png");
+  background-image: url("assets/img/fastelavn4.png");
   background-size: cover;
 }
 
 #imgTen {
   grid-area: imgTen;
-  background-image: url("/assets/img/fastelavn5.png");
+  background-image: url("assets/img/fastelavn5.png");
   background-size: cover;
 }
+
 /* 
 header {
   background-image: url("/assets/img/ha-fyrtoejet.png");
