@@ -186,7 +186,9 @@ header section p {
   background-image: url("assets/img/fastelavn5.png");
   background-size: cover;
 }
-
+.events {
+  background-color: #8c8a93;
+}
 /* 
 header {
   background-image: url("/assets/img/ha-fyrtoejet.png");
