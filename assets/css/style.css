@@ -211,6 +211,15 @@ header section p {
   max-width: 720px;
 }
 
+.events div article.firstevent {
+  display: flex;
+  justify-content: center;
+}
+
+.firstevent h2 {
+  font-size: 62px;
+}
+
 /* 
 header {
   background-image: url("/assets/img/ha-fyrtoejet.png");
