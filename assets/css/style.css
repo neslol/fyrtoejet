@@ -78,6 +78,10 @@ footer section.form form {
   border-radius: 10px;
 }
 
+footer section.form form label {
+  color: white;
+}
+
 /* INDEX */
 
 body.index nav ul li:nth-child(2) a {
@@ -195,13 +199,15 @@ header section p {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  h1 {
-    font-size: 50px;
-    color: black;
-  }
-  p {
-    padding: 5px;
-  }
+}
+
+.events h1 {
+  font-size: 50px;
+  color: black;
+}
+.events p {
+  padding: 5px;
+  max-width: 720px;
 }
 
 /* 
