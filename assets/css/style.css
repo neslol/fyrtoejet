@@ -193,12 +193,13 @@ header section p {
 .events {
   background-color: #dbc4c0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  gap: 20px;
 }
 
 .events h1 {
