@@ -281,7 +281,7 @@ header section.calendar article:last-child {
 /* Galleri */
 
 body.galleri {
-  background-color: #66c089;
+  background-color: #ecdeb5;
 }
 
 body.galleri nav ul li:nth-child(4) a {
@@ -373,7 +373,7 @@ body.aabningstider nav ul li:last-child a {
 }
 
 section.tekst-omos {
-  background-color: #66c089;
+  background-color: #ecdeb5;
   display: flex;
   min-height: 400px;
 }
