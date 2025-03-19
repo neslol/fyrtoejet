@@ -145,7 +145,7 @@ header section p {
 
 #imgThree {
   grid-area: imgThree;
-  background-image: url("../img/Easter2.png");
+  background-image: url("../img/easter2.png");
   background-size: cover;
 }
 
