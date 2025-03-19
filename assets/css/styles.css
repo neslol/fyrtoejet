@@ -416,5 +416,14 @@ section.tekst-omos {
 
 .personale p {
   text-align: center;
-  color: #ffffff;
+  color: #000;
+}
+
+.personale p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.personale div.pic-flexwrap article img {
+  width: 200px;
+  height: 200px;
 }
