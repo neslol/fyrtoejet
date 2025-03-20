@@ -79,6 +79,7 @@ footer section.form form {
 }
 
 footer section.form form label {
+  border-radius: 1000px;
   color: white;
 }
 
@@ -107,10 +108,92 @@ header {
     "imgSix imgEight imgNine imgNine imgTen";
 }
 
+section.photoGallery {
+  display: grid;
+  max-width: 1180px;
+  margin: 20px auto;
+  gap: 20px;
+  grid-template-columns: 280px 100px 100px 100px 180px 100px 280px;
+  grid-template-rows: repeat(4, 257px);
+  grid-template-areas:
+    "one one one two two three three"
+    "one one one four four four five"
+    "six seven seven seven eight eight nine"
+    "ten ten eleven eleven eleven twelve twelve";
+}
+
+#one {
+  grid-area: one;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#two {
+  grid-area: two;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#three {
+  grid-area: three;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#four {
+  grid-area: four;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#five {
+  grid-area: five;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#six {
+  grid-area: six;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#seven {
+  grid-area: seven;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#eight {
+  grid-area: eight;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#nine {
+  grid-area: nine;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#ten {
+  grid-area: ten;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#eleven {
+  grid-area: eleven;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#twelve {
+  grid-area: twelve;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
 header section {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  border-radius: 10px;
 }
 
 header section h4 {
