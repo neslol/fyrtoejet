@@ -388,6 +388,13 @@ section.tekst-omos {
   display: flex;
   min-height: 400px;
 }
+
+section.omos-pic {
+  display: flex;
+  justify-content: center;
+  background-color: #ecdeb5;
+}
+
 .column {
   margin-top: 50px;
   font-size: 20px;
