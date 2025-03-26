@@ -108,85 +108,24 @@ header {
     "imgSix imgEight imgNine imgNine imgTen";
 }
 
-section.photoGallery {
-  display: grid;
-  max-width: 1180px;
-  margin: 20px auto;
-  gap: 20px;
-  grid-template-columns: 280px 100px 100px 100px 180px 100px 280px;
-  grid-template-rows: repeat(4, 257px);
-  grid-template-areas:
-    "one one one two two three three"
-    "one one one four four four five"
-    "six seven seven seven eight eight nine"
-    "ten ten eleven eleven eleven twelve twelve";
+section.tekst-omos {
+  background-color: #ecdeb5;
+  display: flex;
+  min-height: 400px;
 }
 
-#one {
-  grid-area: one;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
+section.omos-pic {
+  display: flex;
+  justify-content: center;
+  background-color: #ecdeb5;
 }
 
-#two {
-  grid-area: two;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-
-#three {
-  grid-area: three;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-
-#four {
-  grid-area: four;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-
-#five {
-  grid-area: five;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-
-#six {
-  grid-area: six;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-
-#seven {
-  grid-area: seven;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-#eight {
-  grid-area: eight;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-#nine {
-  grid-area: nine;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-#ten {
-  grid-area: ten;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-#eleven {
-  grid-area: eleven;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
-}
-#twelve {
-  grid-area: twelve;
-  background-image: url("../img/Placement\ Area.png");
-  background-size: cover;
+.column {
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 10px;
+  columns: 3;
+  gap: 30px;
 }
 
 header section {
@@ -273,6 +212,243 @@ header section p {
   background-image: url("../img/fastelavn5.png");
   background-size: cover;
 }
+
+/* Begivenheder */
+
+body.events {
+  background-color: #ecdeb5;
+}
+
+body.events nav ul li:nth-child(3) a {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+body.events h2.title {
+  font-size: 48px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+section.events {
+  display: grid;
+  max-width: 1174px;
+  margin: 20px auto;
+  column-gap: 26px;
+  row-gap: 42px;
+  grid-template-columns: repeat(2, 574px);
+  grid-template-rows: repeat(3, 197px);
+  grid-template-areas:
+    "one two"
+    "three four"
+    "five six";
+}
+
+section.events div.eventPage {
+  border: solid 10px #a1c39a;
+  border-radius: 25px;
+  display: flex;
+  z-index: 2;
+}
+
+section.events div.eventPage:nth-child(2),
+section.events div.eventPage:nth-child(3),
+section.events div.eventPage:last-child {
+  border: solid 10px #d7c99d;
+}
+
+section.events div.eventPage div.date {
+  min-width: 150px;
+  background-color: #f7f6fe;
+  border-radius: 10px 0px 0px 10px;
+}
+
+div.date p.day {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 74px;
+  color: #00005c;
+}
+
+div.date p.month {
+  text-align: center;
+  color: #00005c;
+}
+
+section.events div.eventPage div.description {
+  min-width: 400px;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+}
+
+div.description h2 {
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #00005c;
+}
+
+div.description p {
+  margin-left: 30px;
+  color: #00005c;
+  margin-bottom: 5px;
+}
+
+div.description h3 {
+  margin-left: 30px;
+  max-width: 329px;
+}
+
+/* Galleri */
+
+body.galleri {
+  background-color: #ecdeb5;
+}
+
+body.galleri nav ul li:nth-child(4) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body.galleri h2.title {
+  font-size: 48px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+body.galleri section.values {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4ecd4;
+}
+
+body.galleri section.values h3 {
+  font-size: 25px;
+}
+
+section.photoGallery {
+  display: grid;
+  max-width: 1180px;
+  margin: 20px auto;
+  gap: 20px;
+  grid-template-columns: 280px 100px 100px 100px 180px 100px 280px;
+  grid-template-rows: repeat(4, 257px);
+  grid-template-areas:
+    "one one one two two three three"
+    "one one one four four four five"
+    "six seven seven seven eight eight nine"
+    "ten ten eleven eleven eleven twelve twelve";
+}
+
+#one {
+  grid-area: one;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#two {
+  grid-area: two;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#three {
+  grid-area: three;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#four {
+  grid-area: four;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#five {
+  grid-area: five;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#six {
+  grid-area: six;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+#seven {
+  grid-area: seven;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#eight {
+  grid-area: eight;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#nine {
+  grid-area: nine;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#ten {
+  grid-area: ten;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#eleven {
+  grid-area: eleven;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+#twelve {
+  grid-area: twelve;
+  background-image: url("../img/Placement\ Area.png");
+  background-size: cover;
+}
+
+/* Personale */
+
+body.personale nav ul li:nth-child(5) a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.personale {
+  background-color: #ecdeb5;
+}
+
+.personale h2 {
+  text-align: center;
+}
+
+.pic-flexwrap {
+  max-width: 712px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.personale p {
+  text-align: center;
+  color: #000;
+}
+
+.personale p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.personale div.pic-flexwrap article img {
+  width: 200px;
+  height: 200px;
+}
+
+/* RESERVE 
+
 .events {
   background-color: #dbc4c0;
   display: flex;
@@ -302,8 +478,7 @@ header section p {
 .firstevent h2 {
   font-size: 62px;
 }
-
-/* 
+  
 header {
   background-image: url("/assets/img/ha-fyrtoejet.png");
   background-repeat: no-repeat;
@@ -377,147 +552,3 @@ header section.calendar article:last-child {
   background-color: #e6905b;
 }
 */
-/* Galleri */
-
-body.galleri {
-  background-color: #ecdeb5;
-}
-
-body.galleri nav ul li:nth-child(4) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-body.galleri h2.title {
-  font-size: 48px;
-  text-align: center;
-  margin: 25px 0;
-}
-
-body.galleri section.values {
-  margin-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  background-color: #f4ecd4;
-}
-
-body.galleri section.values h3 {
-  font-size: 25px;
-}
-
-.flex-item {
-  position: relative;
-}
-
-figcaption {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 20%;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
-}
-
-.flex-item:hover figcaption {
-  display: flex;
-}
-
-.flex-container {
-  display: flex;
-  height: 100vh;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.flex-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.flex-item {
-  display: block;
-  overflow: hidden;
-  flex: 1 1 250px;
-  align-self: stretch;
-}
-
-.large {
-  flex: 1 1 500px;
-}
-
-/* ? */
-
-body.omos nav ul li:nth-child(3) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-body.personale nav ul li:nth-child(5) a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-section.tekst-omos {
-  background-color: #ecdeb5;
-  display: flex;
-  min-height: 400px;
-}
-
-section.omos-pic {
-  display: flex;
-  justify-content: center;
-  background-color: #ecdeb5;
-}
-
-.column {
-  margin-top: 50px;
-  font-size: 20px;
-  padding: 10px;
-  columns: 3;
-  gap: 30px;
-}
-
-.personale {
-  background-color: #ecdeb5;
-}
-
-.personale h2 {
-  text-align: center;
-}
-
-.pic-flexwrap {
-  max-width: 712px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.pic-flexwrap article {
-  width: 100%;
-  max-width: 200px;
-}
-
-.personale p {
-  text-align: center;
-  color: #000;
-}
-
-.personale p:nth-child(2) {
-  margin-bottom: 20px;
-}
-
-.personale div.pic-flexwrap article img {
-  width: 200px;
-  height: 200px;
-}
