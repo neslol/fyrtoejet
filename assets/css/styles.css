@@ -121,6 +121,8 @@ section.omos-pic {
 }
 
 .column {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 50px;
   font-size: 20px;
   padding: 10px;
@@ -211,6 +213,12 @@ header section p {
   grid-area: imgTen;
   background-image: url("../img/fastelavn5.png");
   background-size: cover;
+}
+
+.omos-pic img {
+  border: solid 10px #a1c39a;
+  border-radius: 25px;
+  margin-bottom: 50px;
 }
 
 /* Begivenheder */
@@ -339,6 +347,10 @@ section.photoGallery {
     "one one one four four four five"
     "six seven seven seven eight eight nine"
     "ten ten eleven eleven eleven twelve twelve";
+}
+
+section.photoGallery div {
+  border-radius: 20px;
 }
 
 #one {
